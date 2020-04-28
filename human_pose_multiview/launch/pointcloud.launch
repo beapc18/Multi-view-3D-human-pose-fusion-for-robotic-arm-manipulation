@@ -1,0 +1,23 @@
+<launch>
+    <node pkg="nodelet" type="nodelet" name="my_manager" args="manager" output="screen"/>
+    <node name="pointcloud_cam1" pkg="nodelet" type="nodelet" args="load depth_image_proc/point_cloud_xyzrgb my_manager">
+        <remap from="rgb/camera_info" to="cam_1/color/camera_info" />
+        <remap from="rgb/image_rect_color" to="cam_1/color/image_raw" />
+        <remap from="depth_registered/image_rect" to="cam_1/depth_registered/image_rect" />
+        <remap from="depth_registered/points" to="cam_1/depth_registered/points" />
+    </node>
+    
+    <node name="pointcloud_cam2" pkg="nodelet" type="nodelet" args="load depth_image_proc/point_cloud_xyzrgb my_manager">
+        <remap from="rgb/camera_info" to="cam_2/color/camera_info" />
+        <remap from="rgb/image_rect_color" to="cam_2/color/image_raw" />
+        <remap from="depth_registered/image_rect" to="cam_2/depth_registered/image_rect" />
+        <remap from="depth_registered/points" to="cam_2/depth_registered/points" />
+    </node>
+    
+    <node name="pointcloud_cam4" pkg="nodelet" type="nodelet" args="load depth_image_proc/point_cloud_xyzrgb my_manager">
+        <remap from="rgb/camera_info" to="cam_4/color/camera_info" />
+        <remap from="rgb/image_rect_color" to="cam_4/color/image_raw" />
+        <remap from="depth_registered/image_rect" to="cam_4/depth_registered/image_rect" />
+        <remap from="depth_registered/points" to="cam_4/depth_registered/points" />
+    </node>
+</launch>

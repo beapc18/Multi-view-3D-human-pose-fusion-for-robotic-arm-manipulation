@@ -1,0 +1,5 @@
+<launch>
+    <node name="pose_generator_cam_1" pkg="human_pose_multiview" type="pose_generator_3d.py" args="1"/>
+    <node name="pose_generator_cam_2" pkg="human_pose_multiview" type="pose_generator_3d.py" args="2"/>
+    <node name="pose_generator_cam_4" pkg="human_pose_multiview" type="pose_generator_3d.py" args="4"/>
+</launch>

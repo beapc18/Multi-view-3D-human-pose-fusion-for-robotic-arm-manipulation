@@ -1,0 +1,7 @@
+<launch>
+    <node name="republish_cam1" type="republish" pkg="image_transport" output="screen" args="compressed in:=/cam_1/color/image_raw raw out:=/cam_1/color/image_raw" />
+    
+    <node name="republish_cam2" type="republish" pkg="image_transport" output="screen" args="compressed in:=/cam_2/color/image_raw raw out:=/cam_2/color/image_raw" />
+    
+    <node name="republish_cam4" type="republish" pkg="image_transport" output="screen" args="compressed in:=/cam_4/color/image_raw raw out:=/cam_4/color/image_raw" />
+</launch>
