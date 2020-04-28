@@ -1,7 +1,7 @@
 # MSC_CognitiveRoboticsLab
 
 Commands:
-For each camera run one prediction model from here (https://github.com/microsoft/human-pose-estimation.pytorch). Adapting the topics in the code for the topics published by the cameras:
+For each camera run one prediction model from here (https://github.com/microsoft/human-pose-estimation.pytorch). Adapting the topics in the code for the topics published by the cameras. The contents of the folder pose_estimation must be placed in the pose_estimation folder of the prediction microsoft model:
 
 ```
 python pose_estimation/run.py --flip-test --cfg experiments/coco/resnet152/256x192_d256x3_adam_lr1e-3.yaml --model-file models/pytorch/pose_coco/pose_resnet_152_256x192.pth.tar
