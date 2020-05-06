@@ -24,11 +24,17 @@ depth value of the surrounding pixels and using the pinhole camera model.
 
 After the 3D predictions from the cameras are obtained, they are fused into one central prediction. For the **pose fusion** process, one **Kalman Filter** for each joint is used. Each one of them estimates the current pose of its joint based on the estimations made for each one of the three cameras.
 
+<p align="center">
+<img src="https://github.com/beapc18/MSC_CognitiveRoboticsLab/blob/master/images/pose_fusion.gif" width="80%">  
+</p>
+
 ## Experiment
 
 In the experiment, a [UR5 robotic arm](https://www.universal-robots.com/) situated in front of the operator moves replicating the operator’s right arm movement. The operator’s arm pose is calculated in real-time using the system previously explained. A trajectory is generated from sequential fused poses of the arm, and is transmitted to the robot arm controller in order for it to replicate the movement.
 
-VIDEO
+<p align="center">
+<img src="https://github.com/beapc18/MSC_CognitiveRoboticsLab/blob/master/images/arm_with_orientation.gif" width="80%">  
+</p>
 
 
 ## Setup guide
