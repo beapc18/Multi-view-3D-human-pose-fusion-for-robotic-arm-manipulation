@@ -1,4 +1,4 @@
-# Operator Pose Estimation
+# Multi-view 3D human pose fusion for robotic arm manipulation
 
 The **goal** of this project is to implement a **real-time system** that allows a **human operator to control an articulated robot by recognizing body poses** and extracting movement information from them. The system estimates the operator’s 3D pose from **several RGBD cameras** and merges them into one central representation. From that fused **3D pose**, information about the position and orientation of specific joints can be extracted. In our case, we show that the system allows the operator to control a **robotic arm** by moving its right arm.
 
